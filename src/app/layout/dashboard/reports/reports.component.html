@@ -1,0 +1,27 @@
+<div class="reports-page pt-page-moveFromBottom">
+  <div class="reports-wrapper">
+    <div class="hide" id='left'>
+        <app-sidebar [hidden]='!show'></app-sidebar>
+    </div>
+    <div class='hide-div-content' id='right'>
+        <div class='reports-btn-fr-wrapper'>
+            <div class='reports-btn-sidebar-collapse'>
+                <a id='btn'  class='fa fa-bars fa-2x'(click)='btnClicked()' aria-hidden="true"></a>
+            </div>
+            <div class="fr">
+                <h2>Reports <small>Work with Chart.js and D3</small></h2>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Add Charts here</h1>
+                    <p>You can use C3.js or Chart.js</p><br/><br/>
+                    <p>
+                        <a class="btn btn-primary btn-lg btn-white" [routerLink]="['/dashboard']">Back to Overview</a>
+                    </p>
+            </div>
+        </div>
+        <span class="glyphicon glyphicon-dashboard bg-fade"></span>
+    </div>
+  </div>
+</div>

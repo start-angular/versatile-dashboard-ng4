@@ -1,0 +1,35 @@
+#Option {
+    appearance: none;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    position: relative;
+    margin-right: 5px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    outline: none;
+}
+#Option:active,
+#Option:checked:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+        inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#Option:checked {
+    background-color: white;
+    border: 1px solid #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+        inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+        inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+    color: white;
+}
+#Option:checked:after {
+    content: '\2713';
+    font-size: 22px;
+    padding: 0;
+    position: absolute;
+    top: -7px;
+    left: 0px;
+    color: #1abc9c;
+}

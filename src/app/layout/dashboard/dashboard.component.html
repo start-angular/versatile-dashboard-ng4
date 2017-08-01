@@ -1,0 +1,29 @@
+<div class="dashboard-page pt-page-moveFromBottom">
+  <div class="wrapper">
+    <!-- <div class="row"> -->
+    <div class='hide' [hidden]='!show' id='left'>
+        <app-sidebar ></app-sidebar>
+    </div>
+    <div class='hide-div-content' id='right'>
+        <div class='btn-fr-wrapper'>
+            <div class='btn-sidebar-collapse'>
+                <a id='btn'  class='fa fa-bars fa-2x'(click)='btnClicked()' aria-hidden="true"></a>
+            </div>
+            <div class="fr">
+                <h2>Overview <small>Why is Versatile Theme so awesome?</small></h2>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Welcome!</h1>
+                    I don't want to bloat this Versatile Theme Free Edition AngularJS Admin theme with a lot of plugins. To install plugins we have bower. Let's keep it real clean!<br /><br />
+                <p>
+                    <a [routerLink]="['/login']"  class="btn btn-primary btn-lg btn-white">Logout</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+  </div>
+
+</div>
